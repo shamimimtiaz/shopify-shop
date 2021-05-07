@@ -89,3 +89,7 @@ import {
   };
 
   export default reducer;
+
+  // export function useProductReducer(initialState) {
+//     return useReducer(reducer, initialState);
+//   }
