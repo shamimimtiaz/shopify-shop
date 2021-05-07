@@ -148,3 +148,4 @@ import {
       
       expect(newState2.cartOpen).toBe(false);
       }); 
+
