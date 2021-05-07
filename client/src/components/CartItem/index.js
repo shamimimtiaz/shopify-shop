@@ -1,11 +1,17 @@
 import React from 'react';
-import { useStoreContext } from '../../utils/GlobalState';
+// import { useStoreContext } from '../../utils/GlobalState';
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
+import { useDispatch, useSelector } from 'react-redux';
 
 const CartItem = ({ item }) => {
 
-  const [, dispatch] = useStoreContext();
+  // const [, dispatch] = useStoreContext();
+  const state = useSelector((state) => {
+    return state
+  });
+  const dispatch = useDispatch();
+  
   const removeFromCart = item => {
     dispatch({
       type: REMOVE_FROM_CART,
@@ -13,6 +19,7 @@ const CartItem = ({ item }) => {
     });
     idbPromise('cart', 'delete', { ...item });
   };
+  
 //Manually input the quantity
   const onChange = (e) => {
     const value = e.target.value;
