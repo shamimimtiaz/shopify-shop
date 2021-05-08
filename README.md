@@ -42,7 +42,7 @@ https://user-images.githubusercontent.com/75001492/117503235-ac6bfc00-af4e-11eb-
 
 ## Link
 
-* Deployment Link: 
+* Deployment Link: https://my-shopify-shop.herokuapp.com/
 * Github Link: https://github.com/shamimimtiaz/shopify-shop.git
 
 ## Questions
